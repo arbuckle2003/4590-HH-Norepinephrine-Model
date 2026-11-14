@@ -1,0 +1,33 @@
+function p = paramsPyr()
+% PARAMSPYR  Baseline parameters for the pyramidal cell (Allen 329549957).
+% Starting (hand-fit) parameters; the population fit samples around these.
+
+p.C     = 1;                % membrane capacitance (uF/cm^2)
+p.area  = 0.000129671;      % membrane area (cm^2)
+p.gL    = 0.0255697;        % leak (mS/cm^2)
+p.EL    = -85.4332;         % leak reversal (mV)
+p.gNa   = 15.3183;          % fast Na (mS/cm^2)
+p.ENa   = 50;               % Na reversal (mV)
+p.VT    = -56.5849;         % Na/Kdr voltage shift (mV)
+p.q     = 1;                % temperature speed-up of Na/Kdr gates
+p.gK    = 2.58017;          % delayed rectifier K (mS/cm^2)
+p.EK    = -90;              % K reversal (mV)
+p.gKv3  = 0;                % Kv3 fast K (mS/cm^2)
+p.wV    = -10;              % Kv3 half-activation (mV)
+p.wk    = 10;               % Kv3 slope (mV)
+p.tw0   = 0.1;              % Kv3 min time constant (ms)
+p.tw1   = 1;                % Kv3 extra time constant (ms)
+p.gCa   = 0.1;              % high-threshold Ca (mS/cm^2)
+p.ECa   = 120;              % Ca reversal (mV)
+p.sV    = -20;              % Ca half-activation (mV)
+p.sk    = 9;                % Ca slope (mV)
+p.gAHP  = 0.133683;         % Ca-activated K, AHP (mS/cm^2)
+p.Kd    = 1;                % AHP half-activation [Ca] (uM)
+p.phi   = 0.0078981;        % Ca influx factor (uM/ms per uA/cm^2)
+p.tauCa = 322.876;          % Ca decay time constant (ms)
+p.Ca0   = 0.01;             % resting [Ca] (uM)
+p.gh    = 0.00942218;       % Ih (mS/cm^2)
+p.Eh    = -30;              % Ih reversal (mV)
+p.rV    = -86.3076;         % Ih half-activation (mV)
+p.taur  = 50;               % Ih time constant (ms)
+end

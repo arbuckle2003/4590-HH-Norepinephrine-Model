@@ -1,0 +1,33 @@
+function p = paramsFS()
+% PARAMSFS  Baseline parameters for the fast spiking cell (Allen 487537399).
+% Starting (hand-fit) parameters; the population fit samples around these.
+
+p.C     = 1;                % membrane capacitance (uF/cm^2)
+p.area  = 1.42739e-05;      % membrane area (cm^2)
+p.gL    = 0.496747;         % leak (mS/cm^2)
+p.EL    = -77.7274;         % leak reversal (mV)
+p.gNa   = 21.5985;          % fast Na (mS/cm^2)
+p.ENa   = 50;               % Na reversal (mV)
+p.VT    = -55.4555;         % Na/Kdr voltage shift (mV)
+p.q     = 4.15527;          % temperature speed-up of Na/Kdr gates
+p.gK    = 2.1143;           % delayed rectifier K (mS/cm^2)
+p.EK    = -90;              % K reversal (mV)
+p.gKv3  = 11.2728;          % Kv3 fast K (mS/cm^2)
+p.wV    = 0.330081;         % Kv3 half-activation (mV)
+p.wk    = 9.08203;          % Kv3 slope (mV)
+p.tw0   = 0.238322;         % Kv3 min time constant (ms)
+p.tw1   = 0.258311;         % Kv3 extra time constant (ms)
+p.gCa   = 0;                % high-threshold Ca (mS/cm^2)
+p.ECa   = 120;              % Ca reversal (mV)
+p.sV    = -20;              % Ca half-activation (mV)
+p.sk    = 9;                % Ca slope (mV)
+p.gAHP  = 0;                % Ca-activated K, AHP (mS/cm^2)
+p.Kd    = 1;                % AHP half-activation [Ca] (uM)
+p.phi   = 0.01;             % Ca influx factor (uM/ms per uA/cm^2)
+p.tauCa = 200;              % Ca decay time constant (ms)
+p.Ca0   = 0.01;             % resting [Ca] (uM)
+p.gh    = 0;                % Ih (mS/cm^2)
+p.Eh    = -30;              % Ih reversal (mV)
+p.rV    = -90;              % Ih half-activation (mV)
+p.taur  = 50;               % Ih time constant (ms)
+end
